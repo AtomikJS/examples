@@ -17,8 +17,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@atomikjs/core": "^0.2.7",
-    "@atomikjs/http": "^0.2.5",
+    "@atomikjs/core": "^0.2.8",
+    "@atomikjs/http": "^0.2.7",
     "reflect-metadata": "^0.2.2"
   }
 }
