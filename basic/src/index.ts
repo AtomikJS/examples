@@ -4,7 +4,7 @@ import { Module } from '@atomikjs/core';
 import { HttpServer } from '@atomikjs/http';
 
 const appModule = new Module({
-  imports: [UserModule]
+  imports: [UserModule],
 })
 
 appModule.init();
