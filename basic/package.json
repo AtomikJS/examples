@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@atomikjs/core": "^0.2.8",
-    "@atomikjs/http": "^0.2.8",
-    "@atomikjs/runtime": "^0.1.1",
+    "@atomikjs/http": "^0.2.16",
+    "@atomikjs/runtime": "^0.1.7",
     "reflect-metadata": "^0.2.2"
   }
 }
