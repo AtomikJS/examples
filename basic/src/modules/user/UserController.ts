@@ -13,14 +13,12 @@ export class UserController {
   
   @Get('/')
   getUser(@Query('name') name: string) {
-    console.log(`Fetching user with name: ${name}`);
     return this.userService.getUser();
   }
 
   @Post('/')
   @Forge(UserForge)
   createUser(@Body() body : any) {
-    console.log('Creating user with body:', body);
     return this.userService.createUser();
   }
 
@@ -29,7 +27,6 @@ export class UserController {
   @Wrap(LoggerWrapper)
   @Shield(ErrorShield)
   testEndpoint(@Query('param') param: string) {
-    console.log(`Test endpoint called with param: ${param}`);
     if (param === 'error') {
       throw new Error('Test error');
     }
@@ -38,7 +35,6 @@ export class UserController {
   @Get('/:id')
   @Gate(AuthGate)
   getUserById(@Param('id') id: string) {
-    console.log(`Fetching user with ID: ${id}`);
     return this.userService.getUser(); 
   }
 }

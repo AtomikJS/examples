@@ -17,9 +17,12 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@atomikjs/core": "^0.2.8",
-    "@atomikjs/http": "^0.2.16",
+    "@atomikjs/core": "^0.2.10",
+    "@atomikjs/cron": "^0.1.5",
+    "@atomikjs/http": "^0.2.20",
+    "@atomikjs/logger": "^0.1.3",
     "@atomikjs/runtime": "^0.1.7",
+    "chalk": "^5.5.0",
     "reflect-metadata": "^0.2.2"
   }
 }
